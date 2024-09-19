@@ -272,7 +272,7 @@ data "aws_iam_policy_document" "main" {
         for_each = try(statement.value.not_principals, [])
 
         content {
-          type        = not_principals.value.type
+          type        = not_principals.value.typecluster
           identifiers = not_principals.value.identifiers
         }
       }
