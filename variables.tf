@@ -39,6 +39,7 @@ variable "cluster_encryption_config" {
   type = object({
     provider_key_arn = string
   })
+  default = null
 }
 
 variable "create_external" {
